@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500");
+.manage .manage-page-content__manage-dashboard .manage-dashboard__filter .search-input {
+  border: none;
+  padding: 0; }
+  .manage .manage-page-content__manage-dashboard .manage-dashboard__filter .search-input:hover {
+    background-color: transparent; }
+  .manage .manage-page-content__manage-dashboard .manage-dashboard__filter .search-input input {
+    line-height: 20px;
+    padding-left: 5px;
+    font-family: 'Noto Sans TC', sans-serif; }
+
+.manage .manage-page-content__manage-dashboard .manage-dashboard__filter .search-btn {
+  border: none;
+  padding: 0; }
+  .manage .manage-page-content__manage-dashboard .manage-dashboard__filter .search-btn:hover {
+    background-color: transparent; }
+  .manage .manage-page-content__manage-dashboard .manage-dashboard__filter .search-btn button {
+    line-height: 24px;
+    border: none;
+    width: 70px;
+    font-family: 'Noto Sans TC', sans-serif; }
+
+.manage .manage-page-content__manage-dashboard .manage-dashboard__info-item ul li > .odBtn {
+  width: 100px;
+  height: 32px;
+  margin-top: 8px;
+  text-align: center; }
+
+.manage .manage-page-content__manage-dashboard .manage-dashboard__info-item ul li {
+  text-align: center; }
+
+.manage .manage-page-content__manage-dashboard .manage-dashboard__cat ul li {
+  width: 14.2857142%; }
+
+.manage .manage-page-content__manage-dashboard .manage-dashboard__info-item ul li {
+  width: 14.2857142%; }
+
+.mem_detail {
+  color: #fff;
+  text-decoration: underline; }
+
+.manage .manage-page-content__poster-inner .poster-inner__madal-content {
+  height: 100%; }
+
+.manage .manage-page-content__poster-inner .poster-inner__madal {
+  width: 700px;
+  height: 40%; }
+
+#mem-table {
+  width: 100%; }
+  #mem-table th, #mem-table td {
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #000; }
+  #mem-table #td-memImg {
+    width: 20%;
+    text-align: center; }
+    #mem-table #td-memImg img {
+      width: 50%;
+      vertical-align: bottom; }
+
+.memcheck {
+  background-color: #9F86C0; }
+
+.odBtn {
+  width: 100px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  padding-left: 33px;
+  padding-bottom: -2px; }
+  .odBtn:hover {
+    background: #9F86C0;
+    border-color: #9F86C0; }
+
+.popupBtn {
+  width: 100px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #222;
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #777;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer; }
+  .popupBtn:hover {
+    background: #9F86C0;
+    border-color: #9F86C0;
+    color: #fff; }
+
+.selectbtn {
+  width: 100px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  color: #fff; }
+  .selectbtn option {
+    color: #000; }
+
+.manage .manage-bar {
+    width: 20%;
+    height: 100vh;
+    float: left;
+    border-right: 2px solid #fff;
+    overflow-y: auto; }
+    .manage .manage-bar__header {
+      height: 17.5vh;
+      width: 100%;
+      padding: 15px; }
+      .manage .manage-bar__header img {
+        width: 100%;
+        vertical-align: top; }
+    .manage .manage-bar ul {
+      list-style: none;
+      font-size: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      align-items: stretch;
+      height: 100%; }
+      .manage .manage-bar ul li {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        border-bottom: 2px solid #fff;
+        align-items: center;
+        font-size: 20px;
+        overflow: hidden; }
+        .manage .manage-bar ul li:last-child {
+          border-bottom: none; }
+        .manage .manage-bar ul li:first-child {
+          border-top: none;
+          /*flex-grow: 2; */
+        }
+        .manage .manage-bar ul li a {
+          display: block;
+          width: 100%;
+          padding: 3rem 2rem;
+          text-align: center;
+          color: #fff;
+          text-decoration: none;
+          text-align: center;
+          position: relative;
+          transition: all .2s; }
+          .manage .manage-bar ul li a:hover {
+            background-color: #9F86C0; }
+.manage .manage-bar ul li{
+  height: 12.5%;
+}
+.manage .manage-page-content__poster-inner .poster-inner__madal-content .madal-content-box {
+  color: #fff;
+}
+#mem-table th, #mem-table td{
+  border:1px solid #fff;
+}
+.manage .manage-bar ul li a{
+  height: 100%;
+  vertical-align: middle;
+  /*padding-top: 3.15rem;*/
+}
+.manage .manage-bar__header img{
+  width: 100%;
+  height: auto;
+}

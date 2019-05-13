@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+html {
+  font-weight: 300; }
+
+/*背景顏色---深色漸層*/
+/*背景顏色---淺色漸層*/
+/*按鈕漸層*/
+/*按鈕hover漸層*/
+/*header menu hover漸層*/
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 1px; }
+
+.active_sec {
+  display: block; }
+
+.hide_sec {
+  display: none; }
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 1vw 1px rgba(0, 255, 255, 0.7), inset 0 0 1vw 1px rgba(0, 255, 255, 0.7); }
+  50% {
+    box-shadow: 0 0 0.2vw 1px rgba(0, 255, 255, 0.7), inset 0 0 0.2vw 1px rgba(0, 255, 255, 0.7); }
+  100% {
+    box-shadow: 0 0 1.4vw 1px rgba(0, 255, 255, 0.7), inset 0 0 1.4vw 1px rgba(0, 255, 255, 0.7); } }
+
+@keyframes rotateHead {
+  0% {
+    transform: scale(0) rotate(0deg); }
+  50% {
+    transform: scale(1) rotate(360deg); }
+  70% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes pointLeft {
+  0% {
+    left: 5%; }
+  100% {
+    left: 10%; } }
+
+@keyframes pointRight {
+  0% {
+    left: 85%; }
+  100% {
+    left: 80%; } }
+
+@keyframes tip {
+  0% {
+    text-shadow: 0 0 0.1vw #00ffff; }
+  100% {
+    text-shadow: 0 0 0.8vw #00ffff; } }
+
+/*桌機版
+ html{
+    font-size: 10px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+ }
+*/
+/*手機版
+html{
+   font-size: 18px; 
+   line-height: 1.5;
+   letter-spacing: 2px;
+}
+*/
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 9px; }
+  .footer {
+    font-size: 18px; } }
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 8px; }
+  .footer {
+    font-size: 18px; } }
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 8px; }
+  .tag-area .tag-item {
+    font-size: 2rem; }
+  .footer {
+    font-size: 18px; } }
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 8px; }
+  .orderlightbox {
+    width: 90%; }
+  .tag-area .tag-item {
+    font-size: 1.8rem; }
+  .footer {
+    font-size: 18px; } }
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 8px; }
+  .orderlightbox {
+    width: 90%; }
+  .tag-area .tag-item {
+    font-size: 1.8rem; }
+  .footer {
+    font-size: 18px; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("../img/img-memCenter/bg1.jpg");
+    background-size: 400%;
+    background-attachment: fixed; }
+  html {
+    font-size: 9.5px; }
+  #memCenter-all {
+    padding-top: 15%;
+    width: 96%;
+    margin: auto;
+    margin-top: 10%; }
+  .section-wrap {
+    flex-direction: column; }
+  .section-item-left {
+    width: 90%;
+    margin: auto; }
+  .section-item-right {
+    width: 100%; }
+  .mem-main-title {
+    border-radius: 1rem;
+    box-sizing: border-box; }
+  .title-word {
+    font-size: 3rem; }
+  .title-icon {
+    width: 15%; }
+  .mem-myrobot {
+    margin: 0; }
+  .myrobot-item-top #myrobot-name {
+    margin: 5% 0 0 0;
+    font-size: 2rem;
+    font-weight: 300; }
+  .myrobot-item-top #myrobot-pic-area {
+    width: 50%;
+    margin: auto; }
+  .myrobot-item-bottom {
+    width: 100%; }
+    .myrobot-item-bottom .otherrobot-item {
+      width: 33%; }
+      .myrobot-item-bottom .otherrobot-item .otherrobot-pic {
+        width: 40%;
+        margin: auto; }
+        .myrobot-item-bottom .otherrobot-item .otherrobot-pic img {
+          width: 100%; }
+      .myrobot-item-bottom .otherrobot-item .otherrobot-name {
+        width: 120%;
+        margin-left: -10%; }
+    .myrobot-item-bottom .pre-btn {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      left: -0.8rem; }
+    .myrobot-item-bottom .next-btn {
+      transform-origin: 0 0;
+      transform: scale(-1) translateY(-50%);
+      top: 50%;
+      right: -3.398rem; }
+  .tag-area {
+    width: 100%; }
+    .tag-area .tag-item {
+      width: 24%;
+      font-size: 1.5rem;
+      color: #002625;
+      line-height: 2.2rem;
+      color: #fff; }
+  .content-area #sub-title {
+    font-size: 2.2rem; }
+    .content-area #sub-title #sub-title-icon {
+      margin: 0 1%; }
+      .content-area #sub-title #sub-title-icon img {
+        height: 3rem; }
+  .content-item {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px; }
+  #content-myorder #myorder-table th, #content-myorder #mycustorder-table th {
+    font-size: 1.6rem; }
+  #content-myorder #myorder-table td, #content-myorder #mycustorder-table td {
+    font-size: 1.4rem; }
+  #content-myorder #myorder-table #td-orderdetail img, #content-myorder #mycustorder-table #td-orderdetail img {
+    width: 1.8rem;
+    vertical-align: text-top; }
+  .orderlightbox {
+    width: 90%; }
+    .orderlightbox .orderlightbox-inner #orderdetails-table-top th {
+      width: 29%; }
+  #content-mylike #mylike-table th {
+    font-size: 1.6rem; }
+  #content-mylike #mylike-table td {
+    font-size: 1.4rem; }
+  #content-mylike #mylike-table #td-artdel img {
+    width: 1.8rem; }
+  #content-mydata .edit-area .edit-area-item {
+    width: 100%;
+    margin-bottom: 5%; }
+    #content-mydata .edit-area .edit-area-item .data-input input {
+      font-size: 17px;
+      width: 80%; }
+  #content-mydata .edit-area .item-myimg .img-frame #img-area-body #img-in {
+    width: 150px;
+    height: 150px; }
+  #content-mydata .edit-area .item-myimg .img-frame #img-area-body #img-icon {
+    right: 30%; }
+  #content-mydata .edit-area .item-myimg .img-frame #img-area-body #img-input {
+    right: 30%; }
+  #content-myrobot #myrobot-table {
+    width: 100%; }
+    #content-myrobot #myrobot-table th, #content-myrobot #myrobot-table td {
+      font-size: 1.8rem;
+      line-height: 3rem; }
+    #content-myrobot #myrobot-table th {
+      padding-right: 2rem; }
+    #content-myrobot #myrobot-table #totalAbility-title {
+      font-size: 1.8rem; }
+  #content-myrobot .myrobot-chart .myrobot-chart-wrap .bar-item .bar-num {
+    font-size: 3.4rem; }
+  .g-number {
+    margin: 1.5vw 1.5vw 3.5vw; }
+    .g-number .g-line {
+      height: 1.5px; }
+  .footer {
+    font-size: 18px; } }
+
+@media screen and (max-width: 380px) {
+  #titlePe .section__forum-title--box {
+    height: 150px; }
+  .footer {
+    font-size: 18px; } }

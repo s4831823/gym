@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
+* {
+  text-decoration: none; }
+
+header{
+  box-sizing: content-box !important;
+  transition: top 0.3s ; 
+  padding: 1px ;
+  position: fixed ;
+  top: 0 ;
+  left: 0 ;
+  right: 0 ;
+  display: flex ;
+  flex-wrap: nowrap ;
+  align-items: flex-start ;
+  z-index: 5555 ;
+  font-family: 'Noto Sans TC', sans-serif;
+  background-image: linear-gradient(rgb(7, 108, 145) 65%, rgba(27, 158, 198, 0.5) 95%, rgba(255, 255, 255, 0) 100%); }
+  header .menu-wrapper {
+    box-sizing: content-box !important;
+    flex: 2;
+    padding-top: 1%;
+    cursor: pointer; }
+  header .hamburger-menu,
+  header .hamburger-menu:after,
+  header .hamburger-menu:before {
+    box-sizing: content-box !important;
+    width: 100%;
+    max-width: 30px;
+    height: 3px;
+    border-radius: 30px; }
+  header .hamburger-menu {
+    box-sizing: content-box !important;
+    position: relative;
+    margin: auto;
+    transform: translateY(25px);
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0ms 300ms; }
+    header .hamburger-menu.animate {
+      box-sizing: content-box !important;
+      background: rgba(255, 255, 255, 0); }
+  header .hamburger-menu:before {
+    box-sizing: content-box !important;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  header .hamburger-menu:after {
+    box-sizing: content-box !important;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  header .hamburger-menu.animate:after {
+    box-sizing: content-box !important;
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  header .hamburger-menu.animate:before {
+    box-sizing: content-box !important;
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  header .logo {
+    box-sizing: content-box !important;
+    flex: 4;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 3% auto 0;
+    width: 50%;
+    max-width: 450px;
+    z-index: 3; }
+    header .logo .logoimg {
+      box-sizing: content-box !important;
+      flex: 3;
+      margin: 0 0%;
+      text-align: center; }
+      header .logo .logoimg a {
+        box-sizing: content-box !important;
+        text-decoration: none; }
+        header .logo .logoimg a svg{
+          width:100%;
+            }
+            .st0{fill:url(#SVGID_1_);}
+           .st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+           .st2{opacity:0.23;fill:#FFFFFF;}
+           .st3{fill:none;stroke:#66C5D9;stroke-miterlimit:10;}
+           .st4{fill:#72C8D5;}
+           .st5{fill:#FFFFFF;}
+           .st6{fill:none;}
+           .st7{fill:#AEADAD;}
+           .st8{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+           .st9{fill:#BB70AB;}
+           .st10{fill:#075B8C;}
+           .st0{fill:#D48Bff;}
+
+           .st5{
+             transition: 1s;
+           }
+        svg:hover .st5{
+          
+                stroke: rgba(0, 247, 255, 0.37);
+                stroke-width:1px;
+                 stroke-dasharray: 100;
+                  stroke-dashoffset: 100;
+                /* fill: #00ffff; */
+                animation: logo 3s linear infinite;
+        }
+    header .logo .leftec, header .logo .rightec {
+      box-sizing: content-box !important;
+      opacity: .8;
+      margin: 0 1%;
+      flex: 1;
+      text-align: center; }
+      header .logo .leftec img, header .logo .rightec img {
+        width: 2%;
+        box-sizing: content-box !important;
+        max-width: 50px; }
+  header ul {
+    box-sizing: content-box !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0px;
+    padding: 2% 2% 1%;
+    display: none;
+    justify-content: space-between;
+    z-index: 1; }
+    header ul li {
+      box-sizing: content-box !important;
+      position: relative;
+      flex: 1;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-align: center;
+      border: 1px solid rgba(223, 223, 223, 0.3);
+      background-color: rgba(0, 76, 82, 0.9);
+      padding: 3% 0 1%;
+      height: 60px;
+      z-index: 1;
+      box-shadow: 0px 0px 0px 0px transparent; }
+      header ul li a {
+        box-sizing: content-box !important;
+        color: white;
+        text-shadow: 0 0 1px white; }
+        header ul li a span {
+          box-sizing: content-box !important;
+          display: block;
+          padding: 1% 0;
+          margin: 0 2%;
+          line-height: 1;
+          transition: 1s; }
+        header ul li a .en {
+          box-sizing: content-box !important;
+          font-family: 'Share Tech Mono', monospace;
+          letter-spacing: 0px;
+          text-shadow: 0 0 0px white;
+          font-size: 18px;
+          color: white;
+          font-weight: 300;
+          padding-top: 0; }
+        header ul li a .ck {
+          margin: 0 15%;
+          box-sizing: content-box !important;
+          /* border:1px solid rgba(255,255,255,.5); */
+          /* background-color: rgba(255, 255, 255, 0.089); */
+          text-shadow: 0 0 10px rgb(0, 247, 255),
+          0 0 20px rgb(0, 247, 255)
+          ;
+        } 
+    header ul li:hover span {
+      box-sizing: content-box !important;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #84fbff;
+      margin: 0 15%;
+      text-shadow: 0 0 3px white; }
+    header ul .bk {
+      box-sizing: content-box !important;
+      display: none;
+      flex: 3;
+      box-shadow: 0px 0px 0px transparent;
+      border-top: 1px solid rgba(223, 223, 223, 0);
+      position: relative; }
+  header .memicon {
+    box-sizing: content-box !important;
+    position: static;
+    z-index: 1;
+    flex: 2;
+    width: 5%;
+    padding-right: 1%;
+    text-align: right; }
+    header .memicon .membericon {
+      box-sizing: content-box !important;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      vertical-align: middle; }
+      header .memicon .membericon .login {
+        box-sizing: content-box !important;
+        font-size: 16px;
+        padding: 5% 0% 5%;
+        color: #fff; 
+        line-height: 1 !important;}
+      header .memicon .membericon #logout-title {
+        box-sizing: content-box !important;
+        display: none; }
+      header .memicon .membericon #header-memName #memCenter-link {
+        box-sizing: content-box !important;
+        color: #fff;
+        font-size: 14px; }
+      header .memicon .membericon img {
+        box-sizing: content-box !important;
+        vertical-align: middle;
+        width: 40%;
+        max-width: 70px;
+        padding: 5%; }
+
+      header .memicon .membericon #login-icon {
+        box-sizing: content-box !important;
+        display: none; }
+        header::before,header::after {
+          /* box-sizing: content-box !important; */
+          box-sizing: content-box !important;}
+          @keyframes logo{
+           to {
+                stroke-dashoffset:0;
+            }      
+        }
+        
+           
+
+
+
+
+@media screen and (max-width: 767px){
+	 header .logo{
+	 	flex: none;
+	 	margin: 3% 0;
+	 	width: 50%
+	 }
+	 header .logo .logoimg a img{
+	 	width: 100%;
+	 }
+	 header .logo .logoimg {
+	 	flex: none;
+	 	width: 150px;
+	 	margin: auto;
+	 }
+	 header .menu-wrapper{
+	 	flex: none;
+	 	width: 10%;
+	 }
+	 header .memicon{
+	 	box-sizing: border-box;
+	 	padding: 3% 0;
+	 	flex:none;
+	 	text-align: left;
+	 	width: 40%;
+	 }
+	 header .memicon .membericon #logout-title{
+	 	width: 40%;
+	 }
+	 #header-memName{
+	 	    width: 100%;
+	 }
+	 header .memicon .membericon img{
+	 	width: 25px;
+	 	padding: 3%;
+	 }
+	
+
+}
+@media screen and (min-width: 768px) {
+  header {
+    display: block; }
+    header .menu-wrapper {
+      display: none; }
+    header .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 20px auto 0;
+      width: 30%; }
+      header .logo .logoimg {
+        flex: 3;
+        margin: 0 1%;
+        text-align: center; }
+        header .logo .logoimg svg {
+          width: 50%;
+          max-width: 200px; }
+    header ul {
+      position: relative;
+      margin: 20px;
+      display: flex;
+      max-width: 1800px; }
+      header ul li {
+        background-color: transparent;
+        font-size: 16px;
+        height: 30px;
+        border: 0px solid transparent;
+        padding-top: 1%; }
+        header ul li a span {
+          padding: 5% 0; }
+          header ul li a .ck {
+            margin: 0 0%;
+}
+          header ul li:hover span {
+            margin: 0 10%;
+}
+        header ul li a .en {
+          font-size: 13px; }
+      header ul .bk {
+        display: block;
+        flex: 3;
+        border-top: 1px solid rgba(223, 223, 223, 0);
+        position: relative; }
+    header ul:before {
+      content: '';
+      position: absolute;
+      background-image: url("../img/img-header/line.png");
+      background-size: 100%;
+      background-position: center;
+      margin: auto;
+      max-width: 1800px;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
+    header .memicon {
+      position: absolute;
+      top: 0%;
+      right: 0;
+      bottom: 50%;
+      width: 50%;
+      padding-right: 1%;
+      text-align: right; }
+      header .memicon .membericon {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        vertical-align: middle;
+        padding-right: 3%; }
+        header .memicon .membericon .login {
+          display: block;
+          width: 10%;
+          font-size: 18px;
+          padding: 1% 1% 1%;
+          color: #fff;
+          cursor: pointer; }
+        header .memicon .membericon img {
+          vertical-align: middle;
+          flex: 1;
+          width: 10%;
+          max-width: 25px;
+          padding: 1% 2%; }
+        header .memicon .membericon #login-icon {
+          display: none; }
+        header .memicon .membericon #header-memName {
+          display: block; }
+          header .memicon .membericon #header-memName #memCenter-link {
+            font-size: 18px;
+             } }
+
+@media screen and (min-width: 1100px) {
+  header {
+    display: block; }
+    header .menu-wrapper {
+      display: none; }
+    header .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 40px auto 0; }
+      header .logo .logoimg {
+        flex: 3;
+        margin: 0 1%;
+        text-align: center; }
+        header .logo .logoimg a svg {
+          width: 60%;
+          max-width: 500px;
+          filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); }
+      header .logo .leftec, header .logo .rightec {
+        opacity: .8;
+        margin: 0 1%;
+        flex: 1;
+        text-align: center; }
+        header .logo .leftec img, header .logo .rightec img {
+          width: 90%; }
+    header ul {
+      position: relative;
+      padding: 50px;
+      display: flex;
+      margin: auto; }
+      header ul li {
+        background-color: transparent;
+        font-size: 22px;
+        height: 30px;
+        border: 0px solid transparent;
+        padding-top: 1%; }
+        header ul li a span {
+          padding: 5% 0; }
+        header ul li a .en {
+          font-size: 18px; }
+      header ul .bk {
+        display: block;
+        flex: 3;
+        position: relative;
+        width: 30%;
+        max-width: 450px; }
+    header ul:before {
+      content: '';
+      position: absolute;
+      background-image: url("../img/img-header/line_1.png");
+      background-size: 100%;
+      background-position: top;
+      margin: auto;
+      max-width: 1800px;
+      background-repeat: no-repeat;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
+    header .memicon {
+      position: absolute;
+      top: 0%;
+      right: 0;
+      bottom: 50%;
+      width: 50%;
+      padding-right: 1%;
+      text-align: right; }
+      header .memicon .membericon {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        vertical-align: middle;
+        padding-right: 5%; }
+        header .memicon .membericon .login {
+          display: inline-block;
+          font-size: 18px;
+          width: 10%;
+          padding: 1.5% 1% 1%;
+          color: #fff;
+          cursor: pointer; }
+        header .memicon .membericon #login-title, header .memicon .membericon #logout-title {
+          cursor: pointer; }
+        header .memicon .membericon img {
+          vertical-align: middle;
+          flex: 1;
+          width: 10%;
+          max-width: 45px;
+          padding: 1% 1%; }
+        header .memicon .membericon #header-memName {
+          display: block; } }
+
+@media screen and (min-width: 1300px) {
+  header {
+    display: block; }
+    header .menu-wrapper {
+      display: none; }
+    header .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: 40px auto 0; }
+      header .logo .logoimg {
+        margin: 0 1%;
+        text-align: center; }
+        header .logo .logoimg a svg {
+          width: 60%;
+          max-width: 500px;
+          filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); }
+    header ul {
+      position: static;
+      padding: 50px;
+      display: flex;
+      max-width: 1800px;
+      margin: auto; }
+      header ul li {
+        background-color: transparent;
+        height: 30px;
+        border: 0px solid transparent;
+        padding-top: 1%; }
+        header ul li a span {
+          font-size: 24px;
+          padding: 3% 0; }
+        header ul li a .en {
+          font-size: 18px; }
+    header .membericon {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-items: center;
+      vertical-align: middle;
+      padding-right: 5%; }
+      header .membericon .login {
+        display: inline-block;
+        width: 8%;
+        font-size: 18px;
+        padding: 1.5% 0% 1%;
+        color: #fff;
+        cursor: pointer; }
+      header .membericon #login-title, header .membericon #logout-title {
+        cursor: pointer; }
+      header .membericon img {
+        vertical-align: middle;
+        flex: 1;
+        width: 10%;
+        max-width: 45px;
+        padding: 1% 1%; }
+      header .membericon #header-memName {
+        display: block; } }
